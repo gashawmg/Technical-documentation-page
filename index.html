@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Technical documentation page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="navbar">
+        <header id="header">C sharp Programming Documentation</header>
+        <br /><br />
+        <a href="#Introduction_to_C#" class="nav-link">Introduction to C#</a>
+        <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+        <a href="#C_Sharp_Language" class="nav-link">C Sharp Language</a>
+        <a href="#DotNET_Framework_Platform_Architecture" class="nav-link"
+          >DotNET Framework Platform Architecture</a
+        >
+        <a href="#Why_C#_is_being_popular" class="nav-link"
+          >Why C# is being popular</a
+        >
+        <a href="#Difference_between_Python_and_C#" class="nav-link">
+          Difference between Python and C#</a
+        >
+        <a href="#Reference" class="nav-link">
+          Reference</a
+        >
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction_to_C#">
+          <header>Introduction to C#</header>
+          <p>
+            C# is an elegant and type-safe object-oriented language that enables
+            developers to build a variety of secure and robust applications that
+            run on the .NET Framework.
+          </p>
+          <p>
+            You can use C# to create Windows client applications, XML Web
+            services, distributed components, client-server applications,
+            database applications, and much, much more. Visual C# provides an
+            advanced code editor, convenient user interface designers,
+            integrated debugger, and many other tools to make it easier to
+            develop applications based on the C# language and the .NET
+            Framework.
+          </p>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+          <header>What you should already know</header>
+          <ul>
+            <li>Understanding of basic programming concepts</li>
+            <li>
+              If you are a complete beginner, you might want to explore Visual
+              C# Express, which is available on the Web.
+            </li>
+            <li>
+              You can also take advantage of books and Web resources about C# to
+              learn practical programming skills.
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="C_Sharp_Language">
+          <header>
+            C Sharp Language
+          </header>
+          <p>
+            C# syntax is highly expressive, yet it is also simple and easy to
+            learn. The curly-brace syntax of C# will be instantly recognizable
+            to anyone familiar with C, C++ or Java. Developers who know any of
+            these languages are typically able to begin to work productively in
+            C# within a very short time. C# syntax simplifies many of the
+            complexities of C++ and provides powerful features such as nullable
+            value types, enumerations, delegates, lambda expressions and direct
+            memory access, which are not found in Java. C# supports generic
+            methods and types, which provide increased type safety and
+            performance, and iterators, which enable implementers of collection
+            classes to define custom iteration behaviors that are simple to use
+            by client code. Language-Integrated Query (LINQ) expressions make
+            the strongly-typed query a first-class language construct
+          </p>
+          <p>Some coding examples of C sharp are as follows:</p>
+          <code>
+             int x = 20;
+            string firstName= "Gashaw"; double x = 20.10; char y ='G',
+          </code>
+          <p>Console output</p>
+          <code>
+            Console.WriteLine("Hello World!"); 
+          </code>
+          <p>string concatenation:<p>
+          <code>
+            string firstFriend = "Gashaw"; string
+            secondFriend = "Ayele"; Console.WriteLine($"My friends are
+            {firstFriend} and {secondFriend}");
+          </code>
+          <p>Conditionals</p>
+          <code>
+            if (Boolean expression) { Body of the conditional statement; } else
+            { Body of the else statement; }
+          </code>
+          <p>Do-While Loops:</p>
+          <code>do { executable code; } while (condition);</code>
+          <p>
+            As an object-oriented language, C# supports the concepts of
+            encapsulation, inheritance, and polymorphism. All variables and
+            methods, including the Main method, the application's entry point,
+            are encapsulated within class definitions. A class may inherit
+            directly from one parent class, but it may implement any number of
+            interfaces. Methods that override virtual methods in a parent class
+            require the override keyword as a way to avoid accidental
+            redefinition. In C#, a struct is like a lightweight class; it is a
+            stack-allocated type that can implement interfaces but does not
+            support inheritance.
+          </p>
+          <p>
+            In addition to these basic object-oriented principles, C# makes it
+            easy to develop software components through several innovative
+            language constructs, including the following:
+          </p>
+          <ul>
+          <li>
+            Encapsulated method signatures called delegates, which enable
+            type-safe event notifications
+          </li>
+          <li>
+            Properties, which serve as accessors for private member variables
+          </li>
+          <li>
+            Attributes, which provide declarative metadata about types at run
+            time
+          </li>
+          <li>Inline XML documentation comments.</li>
+          <li>
+            Language-Integrated Query (LINQ) which provides built-in query
+            capabilities across a variety of data sources
+          </li>
+            </ul>
+        </section>
+        <section class="main-section" id="DotNET_Framework_Platform_Architecture">
+          <header>
+           DotNET Framework Platform Architecture
+          </header>
+          <p>
+            C# programs run on the .NET Framework, an integral component of
+            Windows that includes a virtual execution system called the common
+            language runtime (CLR) and a unified set of class libraries. The CLR
+            is the commercial implementation by Microsoft of the common language
+            infrastructure (CLI), an international standard that is the basis
+            for creating execution and development environments in which
+            languages and libraries work together seamlessly
+          </p>
+          <p>
+            Source code written in C# is compiled into an intermediate language
+            (IL) that conforms to the CLI specification. The IL code and
+            resources, such as bitmaps and strings, are stored on disk in an
+            executable file called an assembly, typically with an extension of
+            .exe or .dll. An assembly contains a manifest that provides
+            information about the assembly's types, version, culture, and
+            security requirements.
+          </p>
+          <p>
+            When the C# program is executed, the assembly is loaded into the
+            CLR, which might take various actions based on the information in
+            the manifest. Then, if the security requirements are met, the CLR
+            performs just in time (JIT) compilation to convert the IL code to
+            native machine instructions. The CLR also provides other services
+            related to automatic garbage collection, exception handling, and
+            resource management. Code that is executed by the CLR is sometimes
+            referred to as "managed code," in contrast to "unmanaged code" which
+            is compiled into native machine language that targets a specific
+            system.
+          </p>
+        </section>
+        <section class="main-section" id="Why_C#_is_being_popular">
+          <header>Why C# is being popular</header>
+          <p>
+            C# has many other reasons for being popular and in demand. Few of
+            the reasons are mentioned below:
+          </p>
+          <ol>
+            <li>
+              <strong> Easy to start:</strong> C# is a high-level language so it
+              is closer to other popular programming languages like C, C++, and
+              Java and thus becomes easy to learn for anyone.
+            </li>
+            <li>
+              <strong
+                >Widely used for developing Desktop and Web Application:</strong
+              >
+              C# is widely used for developing web applications and Desktop
+              applications. It is one of the most popular languages that is used
+              in professional desktop. If anyone wants to create Microsoft apps,
+              C# is their first choice.
+            </li>
+            <li>
+              <strong>Community:</strong>The larger the community the better it
+              is as new tools and software will be developing to make it better.
+              C# has a large community so the developments are done to make it
+              exist in the system and not become extinct.
+            </li>
+            <li>
+              <strong>Game Development:</strong> C# is widely used in game
+              development and will continue to dominate. C# integrates with
+              Microsoft and thus has a large target audience. The C# features
+              such as Automatic Garbage Collection, interfaces, object-oriented,
+              etc. make C# a popular game developing language
+            </li>
+          </ol>
+        </section>
+        <section class="main-section" id="Difference_between_Python_and_C#">
+          <header>Difference between Python and C#</header>
+          <p>
+            C# is an object-oriented programming language, is pronounced as
+            C-Sharp. This language was developed to compete with Java, by
+            Microsoft under the leadership of Anders Heijlberg and his team.
+            Like python it does not free of cost, it comes with the license. It
+            is a compiled language rather than an interpreted language. There
+            are 86 total keywords used in the C# language. In c#, pointers are
+            used only in unsafe mode.
+          </p>
+          <p>
+            Python is a multi-paradigm programming language such as
+            object-oriented programming and structured programming and many
+            others. It was developed by Guido van Rossum in the late 1980s.
+            There are 33 total keywords used in the python 3.7. It doesn’t
+            support pointers. It is dynamic-type language whereas C# is
+            static-type language. It is easier than C# in order to learn
+          </p>
+        </section>
+        <section class="main-section" id="Reference">
+          <header>
+            Reference
+          </header>
+          <p>Most of the documentation in this page is taken from<a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">Microsoft Website</a></p>
+          
+      </main>
+    </div>
+  </body>
+</html>
